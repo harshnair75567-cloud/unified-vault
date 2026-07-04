@@ -1,0 +1,20 @@
+# Unified Vault configuration
+
+ips:
+  watch_zones:
+    - "/home/harsh/Citadel"
+    - "/home/harsh/Downloads"
+    - "/home/harsh/Documents"
+  safe_tools: ["mousepad", "nano", "vim", "python3", "thunar", "code"]
+
+ids:
+  ports: [7777, 8888, 9999, 9090, 4444, 21]
+  signatures_file: "ids/signatures.json"
+
+integrity:
+  baseline_file: "integrity_baseline.json"
+  scan_targets:
+    - "/home/harsh/projects"
+
+logging:
+  log_dir: "./logs"
